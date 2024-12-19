@@ -1,0 +1,24 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置基础字体和行高 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* 移除列表样式 */
+ul, ol {
+    list-style: none;
+}
+
+/* 移除链接下划线 */
+a {
+    text-decoration: none;
+    color: inherit;
+} 

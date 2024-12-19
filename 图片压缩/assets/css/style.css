@@ -1,0 +1,206 @@
+/* 全局样式变量 */
+:root {
+    --primary-color: #007AFF;
+    --secondary-color: #5856D6;
+    --background-color: #F5F5F7;
+    --surface-color: #ffffff;
+    --text-primary: #1D1D1F;
+    --text-secondary: #86868B;
+    --max-width: 800px;
+    --border-radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* 页面布局 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+/* 响应式容器 */
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/* 头部样式 */
+header {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* 主要内容区样式 */
+main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* 底部样式 */
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    /* 移动端样式将在这里定义 */
+} 
+
+/* 上传区域样式 */
+.upload-area {
+    background: var(--surface-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: var(--shadow);
+}
+
+.upload-box {
+    border: 2px dashed var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    background: rgba(0, 122, 255, 0.05);
+}
+
+.upload-box svg {
+    width: 32px;
+    height: 32px;
+}
+
+.upload-box p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.upload-hint {
+    color: var(--text-secondary);
+    font-size: 0.8rem !important;
+}
+
+/* 预览区域样式 */
+.preview-area {
+    background: var(--surface-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: var(--shadow);
+}
+
+.preview-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.preview-box {
+    text-align: center;
+}
+
+.preview-box h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.image-preview {
+    margin: 0.5rem 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-info {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* 按钮样式 */
+.primary-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.primary-btn:hover {
+    background: var(--secondary-color);
+}
+
+.secondary-btn:hover {
+    background: rgba(0, 122, 255, 0.1);
+} 
+
+/* 压缩设置样式 */
+.setting-item {
+    margin-bottom: 0.8rem;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.setting-item select {
+    width: 100%;
+    padding: 0.4rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 6px;
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.setting-item input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.setting-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+} 
